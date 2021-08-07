@@ -7,7 +7,7 @@
     <link rel="icon" href="images/favicon.png" type="image/gif" >
 
     <link rel="stylesheet" href="style/style.css">
-    <title>Weather App</title>
+    <title>upStorm | weatherapp</title>
 </head>
 <body>
     
