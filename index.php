@@ -12,8 +12,10 @@
 <body>
     
     <div class="container">
-        <div class="current-info">
 
+
+        <div class="current-info">
+            
             <div class="date-container">
                 <div class="time" id="time">
                     12:30 <span id="am-pm">PM</span>
@@ -33,6 +35,10 @@
                 <div class="time-zone" id="time-zone">Region/City</div>
                 
                 <div id="country" class="country">Country</div>
+                </div>
+                <br>
+                <div class="top-temp" id="top-temp">
+
                 </div>
             </div>
             </div>

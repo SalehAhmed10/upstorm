@@ -1,5 +1,6 @@
 const timeEl = document.getElementById('time');
 const dateEl = document.getElementById('date');
+const toptemp = document.getElementById('top-temp')
 const currentWeatherItemsEl = document.getElementById('current-weather-items');
 const timezone = document.getElementById('time-zone');
 const countryEl = document.getElementById('country');
@@ -45,10 +46,17 @@ function getWeatherData () {
 }
 
 function showWeatherData (data){
-  let {humidity, pressure, sunrise, sunset, wind_speed} = data.current;
+  let {humidity, pressure, sunrise, temp, sunset, wind_speed} = data.current;
 
   timezone.innerHTML = data.timezone;
   countryEl.innerHTML = data.lat + 'N ' + data.lon+'E'
+
+  toptemp.innerHTML = 
+  `
+    <div class="curr-temp">
+        <h3>${temp}&#176;C</h3>
+    </div> 
+  `
 
   currentWeatherItemsEl.innerHTML = 
   `<div class="weather-item">
